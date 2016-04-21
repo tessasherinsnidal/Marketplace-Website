@@ -17,12 +17,110 @@ html {
   box-sizing: inherit;
 }
 
+h1 {
+  display: inline-block;
+}
+
 body {
   margin: 0;
 }
 
-b {
+main {
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.marketplace {
+  float: left;
+}
+
+.logo {
+  max-width: 40px;
+  display: inline-block;
+}
+
+header{
+  color: #fff;
+  background-color: #000;
+}
+
+ul {
+  float: right;
+}
+
+li {
+  list-style-type: none;
+  max-width: 20%;
+}
+
+nav {
+  display: inline-block;
+}
+
+nav a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.location {
+  max-width: 30px;
+}
+
+.banner {
+  max-height: 500px;
+  position: relative;
+  float: right;
+  color: #fff;
+}
+
+.img-flex {
   display: block;
+  width: 100%;
+  margin: 0;
+  max-height: 346.5px;
+}
+
+h2 {
+  font-size: 3rem;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  line-height: 1.4;
+  display: inline;
+}
+
+.banner-body {
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  top: 5%;
+  width: 40%;
+  max-width: 60em;
+  max-height: 45em
+  padding: 0 1rem;
+}
+
+.btn {
+  color: #fff;
+  font-size: 1.125rem;
+  text-decoration: none;
+  margin: 5px;
+  padding: .45em;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  border-width: 3px;
+  display: inline-block;
+}
+
+.btn-big {
+  font-size: 3rem;
+}
+
+.btn:hover {
+  background-color: #fff;
+  border-color: #000 transparent 50%;
+  color: #000;
+  border-width: 3px;
 }
 
 @media only screen and (min-width: 25em) {
