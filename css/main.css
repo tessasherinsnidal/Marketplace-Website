@@ -19,6 +19,8 @@ html {
 
 h1 {
   display: inline-block;
+  font-size: 1.5rem;
+  margin-top: 1em;
 }
 
 body {
@@ -53,20 +55,37 @@ ul {
 
 li {
   list-style-type: none;
-  max-width: 20%;
+  max-width: 25%;
+  float: left;
+  width: 50%;
+  text-align: center;
 }
 
 nav {
   display: inline-block;
   float: right;
   width: 60%;
-  margin-top: 1rem;
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 
-a{
+a {
   text-decoration: none;
   color: #fff;
+}
+
+li:hover {
+  background-color: rgba(255,255,255,0.5);
+  border: 3px solid #fff;
+  border-radius: 10px;
+  border-width: 1px;
+
+}
+
+.location:hover {
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 10px;
+  border-width: 1px;
 }
 
 h4 {
@@ -94,7 +113,7 @@ h4 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -111,14 +130,16 @@ h2 {
   max-width: 60em;
   max-height: 45em
   padding: 0 1rem;
+  min-width: 221.2px;
 }
 
 .btn {
   color: #fff;
   font-size: 1.125rem;
   text-decoration: none;
+  text-align: center;
   margin: 5px;
-  padding: .45em;
+  padding: .2em;
   border: 3px solid #fff;
   border-radius: 10px;
   border-width: 1px;
@@ -131,10 +152,9 @@ h2 {
 
 .btn:hover {
   background-color: rgba(255,255,255,0.5);
-  background: transparent;
   border-color: #000;
   color: #000;
-  border-width: 3px;
+  border-width: 1px;
 }
 
 .cards {
@@ -142,14 +162,26 @@ h2 {
 }
 
 .card {
-  width: 100%;
-  display: block;
+  width: 49.5%;
+  display: inline-block;
 }
 
 .cards-img {
-  width: 75%;
+  width: 90%;
   display: block;
   margin: auto;
+}
+
+.section {
+  margin: 1em;
+}
+
+.section-img {
+  display: none;
+}
+
+.direction {
+  width: 100%;
 }
 
 footer {
@@ -161,16 +193,6 @@ footer {
 .terms {
   display: block;
   margin: 1rem;
-}
-
-@media only screen and (min-width: 25em) {
-
-  li {
-    float: left;
-    width: 50%;
-    text-align: center;
-  }
-
 }
 
 @media only screen and (min-width: 38em) {
@@ -187,6 +209,14 @@ footer {
   html {
     font-size: 120%;
     line-height: 1.5;
+  }
+
+  .card {
+    width: 24.5%;
+  }
+
+  .section-img {
+    display: block;
   }
 
 }
